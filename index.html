@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>colResizable demo</title>
+
+    <link rel="stylesheet" href="pdf_viewer.css">
+    <script src="jquery.js"></script>
+    <script src="pdf.js"></script>
+    <script src="pdf_viewer.js"></script>
+    <script src="colResizable-1.6.js"></script>
+
+</head>
+
+<body>
+    <div class="center">
+
+        <table id="normal" width="100%" border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="left" style="height: 400px; width: 437px">
+                    <div id="pageContainer"  style="height: 400px;overflow:scroll;overflow-x : hidden ;">
+                    </div>
+                </td>
+                <td style="overflow:scroll; width:822px">
+                    <table border="0" rules="all" style="-overflow:auto; display:block; height:400px; width:1400px;text-align:center">
+                        <tr>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>简介</th>
+                            <th>作者</th>
+                            <th>库存</th>
+                            <th>价格</th>
+                            <th>销量</th>
+                            <th>备注</th>
+                            <th>阅读数</th>
+                            <th>点赞数</th>
+                            <th>收藏数</th>
+                            <th>评论数</th>
+                            <th>发布时间</th>
+                            <th>修改时间</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>这是一篇标题很长的文章用来测试表格的测试标题</td>
+                            <td>这是一篇标题很长的文章用来测试表格不被太多列挤得变形的描述...</td>
+                            <td>管理员</td>
+                            <td>3000</td>
+                            <td>120.68</td>
+                            <td>1200</td>
+                            <td>测试啊测试test</td>
+                            <td>123</td>
+                            <td>20</td>
+                            <td>17</td>
+                            <td>5</td>
+                            <td>2018-03-06 12:00:00</td>
+                            <td>2018-03-07 15:00:00</td>
+                        </tr>
+                    </table>
+                    <!-- </div> -->
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button id="first">First</button>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="last">Last</button>
+            &nbsp; &nbsp;
+            <span>Page:
+                <span id="page_num">1</span> /
+                <span id="page_count"></span>
+            </span>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#normal").colResizable({
+            resizeMode: 'fit',
+            partialRefresh: true,
+            minWidth1: 822,
+            minWidth2: 120,
+        });
+
+    });	
+
+// Loaded via <script> tag, create shortcut to access PDF.js exports.
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
+
+// Some PDFs need external cmaps.
+//
+var CMAP_URL = 'cmaps/';
+var CMAP_PACKED = true;
+var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
+var desiredWidth = 300;
+var pageNum = 1;
+var pageCount;
+var container = document.getElementById('pageContainer');
+var _doc = null;
+var promise = Promise.resolve();
+
+// Fetch the PDF document from the URL using promises.
+pdfjsLib.getDocument({
+  url: DEFAULT_URL,
+  cMapUrl: CMAP_URL,
+  cMapPacked: CMAP_PACKED,
+}).then(function (doc) {
+  pageCount = doc.numPages
+  _doc = doc
+  promise = promise.then(function (pageNum) {
+    return doc.getPage(pageNum).then(function (pdfPage) {
+        var viewport = pdfPage.getViewport(1);
+        var _scale =  desiredWidth / viewport.width;
+      // Create the page view.
+      var pdfPageView = new pdfjsViewer.PDFPageView({
+        container: container,
+        id: pageNum,
+        scale: _scale,
+        defaultViewport: pdfPage.getViewport(_scale),
+        annotationLayerFactory: new pdfjsViewer.DefaultAnnotationLayerFactory(),
+        renderInteractiveForms: true,
+        textLayerFactory: new pdfjsViewer.DefaultTextLayerFactory()
+      });
+      //show numPages
+      document.getElementById('page_count').innerText = pageCount
+      // Associate the actual page with the view and draw it.
+      pdfPageView.setPdfPage(pdfPage);
+      return pdfPageView.draw();
+    });
+  }.bind(null, pageNum));
+  // }
+});
+
+// next
+function onNextPage() {
+  if (pageNum >= pageCount) {
+    return;
+  }
+  removeAllChild(container)
+  pageNum++
+  promise = promise.then(function (pageNum) {
+    return _doc.getPage(pageNum).then(function (pdfPage) {
+        var viewport = pdfPage.getViewport(1);
+        var _scale =  desiredWidth / viewport.width;
+      // Create the page view.
+      var pdfPageView = new pdfjsViewer.PDFPageView({
+        container: container,
+        id: pageNum,
+        scale: _scale,
+        defaultViewport: pdfPage.getViewport(_scale),
+        annotationLayerFactory: new pdfjsViewer.DefaultAnnotationLayerFactory(),
+        renderInteractiveForms: true,
+      });
+      document.getElementById('page_num').innerText = pageNum
+      // Associate the actual page with the view and draw it.
+      pdfPageView.setPdfPage(pdfPage);
+      return pdfPageView.draw();
+    });
+  }.bind(null, pageNum));
+};
+document.getElementById('next').addEventListener('click', onNextPage);
+
+// previous
+function onPreviousPage() {
+  if (pageNum <= 1) {
+    return;
+  }
+  removeAllChild(container)
+  pageNum--
+
+  promise = promise.then(function (pageNum) {
+    return _doc.getPage(pageNum).then(function (pdfPage) {
+        var viewport = pdfPage.getViewport(1);
+        var _scale =  desiredWidth / viewport.width;
+      // Create the page view.
+      var pdfPageView = new pdfjsViewer.PDFPageView({
+        container: container,
+        id: pageNum,
+        scale: _scale,
+        defaultViewport: pdfPage.getViewport(_scale),
+        annotationLayerFactory: new pdfjsViewer.DefaultAnnotationLayerFactory(),
+        renderInteractiveForms: true,
+      });
+      document.getElementById('page_num').innerText = pageNum
+      // Associate the actual page with the view and draw it.
+      pdfPageView.setPdfPage(pdfPage);
+      return pdfPageView.draw();
+    });
+  }.bind(null, pageNum));
+};
+document.getElementById('prev').addEventListener('click', onPreviousPage);
+
+// first
+function firstPage() {
+  if(pageNum == 1) return ;
+  pageNum = 1
+  removeAllChild(container)
+
+  promise = promise.then(function (pageNum) {
+    return _doc.getPage(pageNum).then(function (pdfPage) {
+        var viewport = pdfPage.getViewport(1);
+        var _scale =  desiredWidth / viewport.width;
+      // Create the page view.
+      var pdfPageView = new pdfjsViewer.PDFPageView({
+        container: container,
+        id: pageNum,
+        scale: _scale,
+        defaultViewport: pdfPage.getViewport(_scale),
+        annotationLayerFactory: new pdfjsViewer.DefaultAnnotationLayerFactory(),
+        renderInteractiveForms: true,
+      });
+      document.getElementById('page_num').innerText = pageNum
+      // Associate the actual page with the view and draw it.
+      pdfPageView.setPdfPage(pdfPage);
+      return pdfPageView.draw();
+    });
+  }.bind(null, pageNum));
+}
+document.getElementById('first').addEventListener('click', firstPage);
+
+// last
+function lastPage(){
+  if(pageNum == pageCount)return ;
+  pageNum = pageCount
+  removeAllChild(container)
+  promise = promise.then(function (pageNum) {
+    return _doc.getPage(pageNum).then(function (pdfPage) {
+        var viewport = pdfPage.getViewport(1);
+        var _scale =  desiredWidth / viewport.width;
+      // Create the page view.
+      var pdfPageView = new pdfjsViewer.PDFPageView({
+        container: container,
+        id: pageNum,
+        scale: _scale,
+        defaultViewport: pdfPage.getViewport(_scale),
+        annotationLayerFactory: new pdfjsViewer.DefaultAnnotationLayerFactory(),
+        renderInteractiveForms: true,
+      });
+      document.getElementById('page_num').innerText = pageNum
+      // Associate the actual page with the view and draw it.
+      pdfPageView.setPdfPage(pdfPage);
+      return pdfPageView.draw();
+    });
+  }.bind(null, pageNum));
+}
+document.getElementById('last').addEventListener('click', lastPage);
+
+
+function removeAllChild(div) {
+  while (div.hasChildNodes()) {
+    div.removeChild(div.firstChild);
+  }
+}
+
+</script>
+
+</html>
